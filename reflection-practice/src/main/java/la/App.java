@@ -57,6 +57,16 @@ public class App {
             strategy.setValueCallBack(object).accept(5);
         });
 
+        Runnable r = new Runnable() {
+
+            @Override
+            public void run() {
+
+            }
+        };
+
+        () -> r.run()
+
         final var practiceGetterCallBack = testClassHandler.getValueCallback(practice);
         final var otherPracticeGetterCallBack = otherClassHandler.getValueCallback(otherPractice);
 
